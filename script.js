@@ -7,7 +7,7 @@ var typed = new Typed(".multiple-text", {
 })
 
 var about_type = new Typed(".about-type", {
-    strings: ["About Me"],
+    strings: ["About"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -23,7 +23,7 @@ var experiences_type = new Typed(".experiences-type", {
 })
 
 var skills_type = new Typed(".skills-text", {
-    strings: ["My Skills and Languages"],
+    strings: ["Skills"],
     typeSpeed: 100,
     backSpeed: 200,
     backDelay: 1000,
@@ -32,14 +32,6 @@ var skills_type = new Typed(".skills-text", {
 
 var projects_type = new Typed(".projects-type", {
     strings: ["Projects"],
-    typeSpeed: 100,
-    backSpeed: 200,
-    backDelay: 1000,
-    loop: true
-})
-
-var contacts_type = new Typed(".contacts-type", {
-    strings: ["Get in Contact"],
     typeSpeed: 100,
     backSpeed: 200,
     backDelay: 1000,
