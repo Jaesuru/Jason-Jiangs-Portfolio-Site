@@ -9,37 +9,132 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-    <body>
-        <header class="header">
-            <a href="#" class="logo">Jason Jiang.</a>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#" class="logo">JJ's Portfolio.</a>
 
-            <nav class="navbar">
-                <a href="#" class="active">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Contact</a>
-            </nav>
-        </header>
+        <nav class="navbar">
+            <a href="#" style="--i:1"class="active">Home</a>
+            <a href="#" style="--i:2">About</a>
+            <a href="#" style="--i:3">Skills</a>
+            <a href="#" style="--i:4">Experiences</a>
+            <a href="#" style="--i:5">Projects</a>
+            <a href="#" style="--i:6">Contact Me!</a>
+        </nav>
+    </header>
 
-        <section class="home">
-            <div class="home-content">
-                <h3>Hey, I'm</h3>
-                <h1>Jason Jiang.</h1>
-                <h3>I'm a <span>Software Developer.</span></h3>
-                <p>Temporary placeholder for yipyap.</p>
-                <div class="social-media">
-                    <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-                    <a href="#"><i class='bx bxl-instagram'></i></a>
-                    <a href="#"><i class='bx bxl-facebook'></i></a>
+    
+
+    <!-- Home Section -->
+    <section class="home">
+        <div class="home-content">
+            <h3>Hey, I'm</h3>
+            <h1>Jason Jiang.</h1>
+            <h3>An Aspiring <span class="multiple-text"></span></h3>
+            <p>Passionate learner, project-builder, and explorer of all things.</p>
+            <div class="social-media">
+                <a href="#" style="--i:8"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="#" style="--i:9"><i class='bx bxl-github'></i></a>
+                <a href="#" style="--i:10"><i class='bx bxl-instagram'></i></a>
+                <a href="#" style="--i:11"><i class='bx bxl-facebook'></i></a>
+            </div>
+            <a href="#" class="button">Download Resume</a>
+        </div>
+        
+        <div class="home-img">
+            <img src="assets/WebsiteImage.png", alt="">
+        </div>
+
+    </section>
+
+    <!-- About Me Section -->
+    <hr class="divider">
+    <section class="about-me">
+        <div class="about-content">
+
+            <div class="my-image">
+                <img src="assets/Profile2Sharpened.png" alt="Profile Picture">
+            </div>
+
+            <div class="about-text">
+                <h2><span class="about-type"></span></h2>
+                <p>
+                    I'm a Computer Science student at Florida International University, 
+                    graduating in Spring 2025. My passion for technology started early, 
+                    and now I focus on software development, including game development, 
+                    web development, and mobile app development. I enjoy problem-solving, 
+                    collaborating with others, and socializing. Outside of tech, I like 
+                    playing pickleball, taking photos, cooking, and staying active.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <hr class="divider">
+    <section class="skills-section">
+        <div class="skills-header">
+            <h2><span class="skills-text"></span></h2>
+        </div>
+        <div class="skills-content">
+            <div class="skills-logos">
+                <img src="assets/Skills/JavaLogo.png" style="--i:1"alt="Java Logo" class="skill-logo">
+                <img src="assets/Skills/CLogo.png" style="--i:2" alt="C Logo" class="skill-logo">
+                <img src="assets/Skills/CSSLogo.svg" style="--i:3" alt="CSS Logo" class="skill-logo">
+                <img src="assets/Skills/HTMLLogo.png"style="--i:4"  alt="HTML Logo" class="skill-logo">
+                <img src="assets/Skills/JSPng.png"style="--i:5"  alt="JavaScript Logo" class="skill-logo">
+                <img src="assets/Skills/PythonLogo.png"style="--i:6"  alt="Python Logo" class="skill-logo">
+                <img src="assets/Skills/GDLogo.svg" style="--i:7" alt="GDScript Logo" class="skill-logo">
+                <img src="assets/Skills/UnityLogo.png" style="--i:8" alt="Unity Logo" class="skill-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <hr class="divider">
+    <section class="experiences-section">
+        <div class="experiences-header">
+            <h2><span class="experiences-type"></span></h2>
+        </div>
+            <div class="experience-card">
+                <div class="experience-info">
+                    <h3>Research Assistance at FIU</h3>
+                    <h4>National Science Foundation (NSF)</h4>
+                    <p>Worked with PhD students on a WiFi sensing project using CSI data and machine learning in Python. We achieved 85% accuracy in gesture recognition using the Nexmon patch on a Raspberry Pi 3b+, showing how powerful CSI data can be for detecting poses across different datasets. Right now, I’m exploring how this technology could be used in healthcare, focusing on detecting breathing patterns for potential medical applications.</p>
                 </div>
-                <a href="#">Download Resume</a>
+                <img src="assets/NSF Logo.png" alt="NSF Logo" class="experience-logo">
             </div>
             
-            <div class="home-img">
-                <img src="assets/WebsiteImage.png", alt="">
+            <div class="experience-card">
+                <div class="experience-info">
+                    <h3>Logistics 2 Lead and Industry Leader</h3>
+                    <h4>CodeCrunch</h4>
+                    <p>I oversee event planning and manage logistical operations to ensure the smooth execution of club initiatives, enhancing the overall member experience. Additionally, I foster connections with industry professionals to organize insightful guest sessions and provide valuable networking opportunities for members.</p>
+                </div>
+                <img src="assets/CodeCrunch logo.jpg" alt="CodeCrunch Logo" class="experience-logo">
             </div>
+            
+            <div class="experience-card">
+                <div class="experience-info">
+                    <h3>INIT Build Member</h3>
+                    <h4>INIT @ FIU</h4>
+                    <p>As a Build Member of INIT, I contributed to game development projects, including Alliance Battlegrounds, a multiplayer 3D shooting game with power-ups created in Unity, and Orchid's Veil, a 2D bullet-hell single-player game developed using the Godot Engine. These experiences highlight my ability to design and implement engaging gameplay mechanics in both 2D and 3D environments, while working collaboratively within a team.</p>
+                </div>
+                <img src="assets/INIT Logo.png" alt="INIT Logo" class="experience-logo">
+            </div>
+        </div>
+    </section>
 
-        </section>
-    </body>
+    <!-- Projects Section -->
+     <hr class="divider">
+     <section class="projects-section">
+        <div class="projects-header">
+            
+        </div>   
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>

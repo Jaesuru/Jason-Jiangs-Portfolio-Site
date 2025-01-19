@@ -12,13 +12,14 @@ body {
     color: #fff
 }
 
+/* First Home Page CSS Formattings */
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: #1f242d;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,15 +32,21 @@ body {
     text-decoration: none;
     font-weight: 600;
     cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
 }
 
 .navbar a {
+    display: inline-block;
     font-size: 18px;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 .navbar a:hover, 
@@ -63,32 +70,330 @@ body {
 
 .home-content h3 {
     font-size: 32px;
-    font-weight: 700
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
 }
 
 .home-content h3:nth-of-type(2) {
     margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
 }
 
 .home-content h3 span {
-    color: #0ef
+    color: #0ef;
 }
 
 .home-content h1 {
     font-size: 56px;
     font-weight: 700;
     margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .home-content p {
-    font-size: 16px;
-    margin-bottom:
+    font-size: 24px;
+    font-weight: 32px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .home-img img {
     max-width: 580px;
+    margin-right: -20px;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;
+    border-radius: 25%;
 }
 
-.home-content a {
+.social-media a {
+    display: inline-flex;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
     color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: 0.5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.social-media a:hover {
+    background: #0ef;
+    color: #1f242d;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #0ef;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #1f242d;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 2s;
+}
+
+.divider {
+    width: 95%;
+    height: 1px;
+    background-color: #888;
+    margin: 20px auto;
+}
+
+/* About Me Page CSS Formattings */
+.about-me {
+    padding: 10px 10%;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 50px;
+    text-align: center
+}
+
+.about-text h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 24px;
+    font-weight: 48px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.my-image {
+    flex-shrink: 0;
+    margin-right: 50px;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;
+    border-radius: 25%;
+}
+
+.my-image img {
+    max-width: 550px;
+    border-radius: 50%;
+}
+
+.about-text h2 {
+    color: #0ef
+}
+/* Skills Section */
+.skills-header {
+    padding: 10px 10%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.skills-header h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #0ef;
+}
+
+/* Skills Section */
+.skills-logos {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 30px; 
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* Individual Skill Logo */
+.skill-logo {
+    width: 120px; 
+    height: 120px; 
+    object-fit: contain; 
+    border-radius: 10px; 
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 1s, calc(.2s * var(--i));
+    background: transparent;
+    border: 6px solid #0ef;
+    border-radius: 50%;
+}
+
+/* Experiences Section */
+.experiences-header {
+    padding: 10px 10%;
+    text-align: center
+}
+
+.experiences-header {
+    margin-bottom: 10px;
+}
+
+.experiences-header h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0ef;
+}
+
+.experiences-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10%;
+}
+
+.experience-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin-bottom: 30px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experience-info {
+    flex: 1;
+    padding-right: 20px; 
+}
+.experience-info h3 {
+    font-size: 28px;
+    font-weight: bold;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+}
+
+.experience-info h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.experience-info p {
+    font-size: 18px;
+    font-weight: 16px;
+    line-height: 1.6;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    color: #ffffffcb
+}
+
+.experience-logo {
+    width: 220px;
+    height: 220px;
+    border-radius: 20%;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-left: auto;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: .1s, 2s;
+}
+
+
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* Keyframe Animations */
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
